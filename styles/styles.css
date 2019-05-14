@@ -1,5 +1,5 @@
 html {
-    font-family: "Quicksand Book";
+    font-family: "Quicksand Bold";
     font-size: 16px;
 }
 
@@ -8,7 +8,56 @@ body {
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .wrap {
     max-width: 61.25rem;
     margin: 0 auto;
+}
+
+.header .background {
+    height: 720px;
+    width: 100%;
+    background-image: url(../imges/Livello_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .background .header-list {
+    padding: 0 0 0 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header .header-list .list-members {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.header .background .button-shoe {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header .background .button-truck {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-list .txt {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.header-list .txt:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
