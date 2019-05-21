@@ -23,33 +23,34 @@ ul {
     background-image: url(../imges/Livello_1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .header .header-area {
-    margin-top: 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    height: 100px;
 }
 
 .header .button-shoes {
-    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+    width: 100px;
 }
 
 .header .background .header-list {
-    padding-left: 0;
-    margin: 16px 0 0 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 400px;
     font-size: 16px;
     font-weight: 1000;
 }
 
 .header .header-list .list-members {
-    margin-top: 20px;
-    margin-right: 55px;
-    display: inline-block;
     color: #ffff;
     text-decoration: none;
 }
@@ -70,27 +71,31 @@ ul {
     text-decoration: underline;
 }
 
-.header .background .title {
-    margin-top: 242px;
-    margin-bottom: -10px;
+.header .background .title-area {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 55px;
-    color: #ffffff;
+    flex-direction: column;
+    height: 560px;
+    width: 100%;
 }
 
-.header .background .pre-title {
-    display: flex;
-    justify-content: center;
+.header .title-area .title {
+    margin-bottom: -15px;
+    font-size: 55px;
+    color: #ffffff;
     text-align: center;
+}
+
+.header .title-area .pre-title {
+    height: 87px;
     font-size: 20px;
     color: #ffffff;
+    text-align: center;
 }
 
 .header .background .button-arrow {
-    margin-top: 280px;
+    margin-top: 70px;
     display: flex;
     justify-content: flex-end;
     border: none;
@@ -105,22 +110,42 @@ ul {
 }
 
 .header .choose-area .choose-list {
-    padding: 0 0 0 0;
     margin-top: 0;
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .header .choose-list .choose-list-area {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
 }
 
-.header .choose-list .second-list-items {
-    margin-top: 60px;
-    margin-left: 30px;
+.header .choose-list-area .men {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100px;
+}
+
+.header .choose-list-area .women {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 145px;
+}
+
+.header .choose-list-area .children {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 175px;
 }
 
 .header .choose-list .choose-button-first {
@@ -144,8 +169,15 @@ ul {
     background-color: #ffffff;
 }
 
+.header .choose-list .products-button-area {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 195px;
+    width: 250px;
+}
+
 .header .choose-list .products-button {
-    margin-bottom: 10px;
     width: 204px;
     height: 52px;
     border-radius: 3px;
@@ -166,7 +198,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .main .main-list .main-list-txt {
@@ -174,11 +206,14 @@ ul {
 }
 
 .main .main-list .line {
-    width: 1110px;
+    width: 1095px;
     border-top: 2px solid #d9d9d9;
     border-bottom: dotted 0px #d9d9d9;
+    margin-right: 85px;
+    margin-left: 45px;
+}
+.main .slider-shop{
     margin-right: 45px;
-    margin-left: 60px;
 }
 
 .main .slider-shop .numbers {
@@ -308,37 +343,161 @@ ul {
     font-weight: 900;
     text-transform: uppercase;
 }
-.main .main-block-pants{
+
+.main .main-block-pants {
     margin-bottom: 20px;
     display: block;
     width: 320px;
     height: 342px;
     background-color: #f5f6f7;
 }
-.main .block-middle .main-imag-pants{
+
+.main .block-middle .main-imag-pants {
     height: 187px;
     margin: 24px auto 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.main .block-bottom .block-bottom-txt-pants{
+
+.main .block-bottom .block-bottom-txt-pants {
     margin-left: 20px;
     color: #aa9b77;
     font-size: 17px;
     font-weight: 900;
     text-transform: uppercase;
 }
-.main .main-block-backpack{
+
+.main .main-block-backpack {
+    margin-bottom: 10px;
     display: block;
     width: 320px;
     height: 342px;
     background-color: #f5f6f7;
 }
-.main .block-middle .main-imag-backpack{
+
+.main .block-middle .main-imag-backpack {
     height: 187px;
     margin: 24px auto 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.main .women-main-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .women-main-list .women-line {
+    width: 1095px;
+    border-top: 2px solid #d9d9d9;
+    border-bottom: dotted 0px #d9d9d9;
+    margin-left: 45px;
+    margin-right: 15px;
+}
+.main .women-main-list .women-list-txt {
+    margin-right: 80px;
+}
+.main .slider-shop-women{
+    margin-left: 45px;
+}
+
+.main .slider-shop-women .numbers {
+    margin-left: 5px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    color: #aa9b77;
+    font-size: 20px;
+}
+
+.main .slider-shop-women .buttons-area {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main .slider-shop-women .button-arrow-main {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.main .main-section .giacket-main-block{
+    margin-bottom: 20px;
+    display: block;
+    width: 320px;
+    height: 335px;
+    background-color: #f5f6f7;
+}
+.main .block-middle .main-imag-shoes {
+    height: 135px;
+    margin: 45px auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .block-bottom-shoes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main .block-bottom-shoes .block-bottom-txt-shoes{
+    margin-left: 20px;
+    color: #aa9b77;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.main .block-bottom-shoes .block-bottom-price-shoes{
+    margin-right: 15px;
+    width: 60px;
+    height: 20px;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.main .main-section .t-shirt-main-block{
+    margin-bottom: 20px;
+    display: block;
+    width: 320px;
+    height: 341px;
+    background-color: #f5f6f7;
+}
+.main .main-section .t-shirt-main-block{
+    margin-bottom: 20px;
+    display: block;
+    width: 320px;
+    height: 335px;
+    background-color: #f5f6f7;
+}
+.main .t-shirt-main-block .block-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.main .t-shirt-main-block .colors {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.main .colors .pink {
+    width: 22px;
+    height: 21px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d3a7ac;
+}
+.main .colors .white {
+    margin-left: 10px;
+    width: 22px;
+    height: 21px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;;
+}
+
