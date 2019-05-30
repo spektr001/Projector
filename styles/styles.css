@@ -46,29 +46,23 @@ ul {
     align-items: center;
     height: 100px;
     width: 400px;
-    font-size: 16px;
-    font-weight: 1000;
 }
 
 .header .header-list .list-members {
     color: #ffff;
+    font-size: 16px;
+    font-weight: 1000;
     text-decoration: none;
+}
+
+.header .header-list .list-members:hover {
+    text-decoration: underline;
 }
 
 .header .background .button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-.header-list .txt {
-    font-weight: 1000;
-    color: #ffffff;
-}
-
-.header-list .txt:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 .header .background .title-area {
@@ -113,15 +107,15 @@ ul {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    height: 180px;
 }
 
 .header .choose-list .choose-list-area {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 500px;
-    height: 200px;
+    flex-basis: 500px;
 }
 
 .header .choose-list-area .men {
@@ -172,12 +166,12 @@ ul {
 .header .choose-list .products-button-area {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    height: 195px;
     width: 250px;
 }
 
 .header .choose-list .products-button {
+    display: flex;
+    flex-wrap: wrap;
     width: 204px;
     height: 52px;
     border-radius: 3px;
@@ -212,7 +206,8 @@ ul {
     margin-right: 85px;
     margin-left: 45px;
 }
-.main .slider-shop{
+
+.main .slider-shop {
     margin-right: 45px;
 }
 
@@ -369,7 +364,7 @@ ul {
 }
 
 .main .main-block-backpack {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: block;
     width: 320px;
     height: 342px;
@@ -383,6 +378,7 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
+
 .main .women-main-list {
     display: flex;
     flex-direction: row;
@@ -397,10 +393,12 @@ ul {
     margin-left: 45px;
     margin-right: 15px;
 }
+
 .main .women-main-list .women-list-txt {
     margin-right: 80px;
 }
-.main .slider-shop-women{
+
+.main .slider-shop-women {
     margin-left: 45px;
 }
 
@@ -423,13 +421,15 @@ ul {
     background-color: transparent;
     cursor: pointer;
 }
-.main .main-section .giacket-main-block{
+
+.main .main-section .giacket-main-block {
     margin-bottom: 20px;
     display: block;
     width: 320px;
     height: 335px;
     background-color: #f5f6f7;
 }
+
 .main .block-middle .main-imag-shoes {
     height: 135px;
     margin: 45px auto 20px auto;
@@ -437,20 +437,23 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
-.main .block-bottom-shoes{
+
+.main .block-bottom-shoes {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.main .block-bottom-shoes .block-bottom-txt-shoes{
+
+.main .block-bottom-shoes .block-bottom-txt-shoes {
     margin-left: 20px;
     color: #aa9b77;
     font-size: 17px;
     font-weight: 900;
     text-transform: uppercase;
 }
-.main .block-bottom-shoes .block-bottom-price-shoes{
+
+.main .block-bottom-shoes .block-bottom-price-shoes {
     margin-right: 15px;
     width: 60px;
     height: 20px;
@@ -459,20 +462,23 @@ ul {
     font-weight: 900;
     text-transform: uppercase;
 }
-.main .main-section .t-shirt-main-block{
+
+.main .main-section .t-shirt-main-block {
     margin-bottom: 20px;
     display: block;
     width: 320px;
     height: 341px;
     background-color: #f5f6f7;
 }
-.main .main-section .t-shirt-main-block{
+
+.main .main-section .t-shirt-main-block {
     margin-bottom: 20px;
     display: block;
     width: 320px;
     height: 335px;
     background-color: #f5f6f7;
 }
+
 .main .t-shirt-main-block .block-top {
     display: flex;
     flex-direction: row;
@@ -480,11 +486,13 @@ ul {
     justify-content: space-between;
     margin-bottom: 0px;
 }
+
 .main .t-shirt-main-block .colors {
     display: flex;
     flex-direction: row;
     margin-right: 20px;
 }
+
 .main .colors .pink {
     width: 22px;
     height: 21px;
@@ -492,12 +500,170 @@ ul {
     border-radius: 10px;
     background-color: #d3a7ac;
 }
+
 .main .colors .white {
     margin-left: 10px;
     width: 22px;
     height: 21px;
     border: none;
     border-radius: 10px;
-    background-color: #ffffff;;
+    background-color: #ffffff;
 }
 
+.footer .about-us {
+    margin-top: 170px;
+    max-width: 1288px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 402px;
+    background-color: #aa9b77;
+}
+
+.footer .about-us .about-us-area {
+    display: block;
+    height: 260px;
+    width: 730px;
+    border: 2px solid #918363;
+}
+
+.footer .about-us-area .about-us-txt {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    width: 140px;
+    color: #837659;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #aa9b77;
+}
+
+.footer .about-us-area .txt-area {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .about-us .lorem-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+.footer .lorem-area .lorem {
+    color: #424242;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+}
+
+.footer .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: 82px;
+    background-color: #535253;
+}
+
+.footer .contacts .contacts-area {
+    margin-left: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 375px;
+}
+
+.footer .contacts .twitter {
+    width: 29px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer .contacts .contacts-txt {
+    margin-left: 20px;
+    height: 25px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer .creators {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 385px;
+    background-color: #424242;
+}
+
+.footer .creators .trekking-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .trekking-area .title {
+    margin-bottom: 0;
+    width: 240px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer .trekking-area .pre-title {
+    margin-left: 65px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.footer .creators-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 445px;
+}
+
+.footer .creators-area .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-list .footer-list-members {
+    border-right: 1px solid #aa9b77;
+    text-align: center;
+    font-weight: 600;
+   
+}
+
+.footer .footer-list .footer-list-members:last-child {
+    border-right: none;
+    text-align: right;
+}
+
+.footer .footer-list .footer-list-members-link {
+    color: #ffff;
+    font-size: 15px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.footer .footer-list .footer-list-members-link:hover {
+    text-decoration: underline;
+}
+
+.footer .creators-area .author {
+    margin-top: -10px;
+    padding-left: 90px;
+    color: #ffffff;
+    font-size: 18px;
+}
